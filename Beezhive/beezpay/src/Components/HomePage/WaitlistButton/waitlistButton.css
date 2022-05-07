@@ -1,0 +1,13 @@
+.waitlist {
+  border: 1px solid;
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.placeholder {
+  border: 1px solid;
+
+  width: 70%;
+}

@@ -17,3 +17,10 @@
   transform: translateX(40px);
   color: #707070;
 }
+.slogan h3{
+    padding: 0;
+    margin: 0;
+    transform: translateX(40px);
+    font-weight: lighter;
+    letter-spacing: 1px;
+}

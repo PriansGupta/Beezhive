@@ -1,5 +1,6 @@
 import React from "react";
 import menu from "../../../Assets/menu.png";
+import Waitlist from "../WaitlistButton/waitlistbutton";
 import "./landing.css";
 
 const Landing = () => {
@@ -11,7 +12,10 @@ const Landing = () => {
           We Completely <br></br>Reimagined Everything <br></br>About Credit
           Cards
         </h1>
+        <br></br>
+        <h3>Canada's First Buy now Pay Later App<br></br>Powered by Beezpay</h3>
       </div>
+      <Waitlist></Waitlist>
     </div>
   );
 };
