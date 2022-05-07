@@ -14,7 +14,6 @@ const Header = () => {
               <li>Rewards</li>
               <li>Register</li>
           </ul>
-          
       </div>
     </div>
   );

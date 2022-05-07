@@ -1,6 +1,7 @@
 import React from "react";
 import menu from "../../../Assets/menu.png";
 import Waitlist from "../WaitlistButton/waitlistbutton";
+import Lottie from "react-lottie-player"
 import "./landing.css";
 
 const Landing = () => {
@@ -18,7 +19,14 @@ const Landing = () => {
         </h3>
       </div>
       <Waitlist></Waitlist>
-      
+      <Lottie
+        src="9711.json"
+        background="transparent"
+        speed="1"
+        style="width: 911px; height: 1620px;"
+        loop
+        autoplay
+      ></Lottie>
     </div>
   );
 };
