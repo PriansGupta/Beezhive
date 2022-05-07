@@ -1,5 +1,5 @@
 import './App.css';
-import Lottie from 'react-lottie-player';
+import Lottie from "../src/Components/HomePage/Lottie/lottie"
 import Landing from './Components/HomePage/Body/landing';
 import Header from './Components/HomePage/Header/Header';
 

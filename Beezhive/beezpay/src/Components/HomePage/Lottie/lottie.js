@@ -1,12 +1,12 @@
 import React from "react";
-import Lottie from "react-lottie-player";
-import Credit from "../../../Animations/Credit_card";
 import "./lottie.css";
+import LottiePlay from "react-lottie-player";
+import Card from "../../../Animations/card.json";
 
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: Credit,
+  animationData: Card,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },
@@ -15,7 +15,7 @@ const defaultOptions = {
 const Lottie = () => {
   return (
     <div className="lottie">
-      <Lottie options={defaultOptions} height={400} width={400} />
+      <LottiePlay options={defaultOptions} height={400} width={400} />
     </div>
   );
 };
