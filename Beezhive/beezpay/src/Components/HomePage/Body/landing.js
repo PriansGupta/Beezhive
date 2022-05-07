@@ -1,7 +1,6 @@
 import React from "react";
 import menu from "../../../Assets/menu.png";
 import Waitlist from "../WaitlistButton/waitlistbutton";
-import Lottie from "react-lottie-player"
 import "./landing.css";
 
 const Landing = () => {
@@ -10,8 +9,9 @@ const Landing = () => {
       <img src={menu} alt="menu"></img>
       <div className="slogan">
         <h1>
-          We Completely <br></br><span style={{color:"#FADE31"}}>Reimagined </span>Everything <br></br>About Credit
-          Cards
+          We Completely <br></br>
+          <span style={{ color: "#FADE31" }}>Reimagined </span>Everything{" "}
+          <br></br>About Credit Cards
         </h1>
         <br></br>
         <h3>
@@ -19,14 +19,6 @@ const Landing = () => {
         </h3>
       </div>
       <Waitlist></Waitlist>
-      {/* <Lottie
-        src="9711.json"
-        background="transparent"
-        speed="1"
-        style="width: 911px; height: 1620px;"
-        loop
-        autoplay
-      ></Lottie> */}
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import Lottie from 'react-lottie-player';
 import './App.css';
 import Landing from './Components/HomePage/Body/landing';
 import Header from './Components/HomePage/Header/Header';
@@ -9,6 +10,7 @@ function App() {
       <div className='first_page'>
       <Header></Header>
       <Landing></Landing>
+      <Lottie></Lottie>
       </div>
     </div>
   );

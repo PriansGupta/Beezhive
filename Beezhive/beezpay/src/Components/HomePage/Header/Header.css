@@ -1,5 +1,5 @@
 .header {
-  /* border: 1px solid; */
+  border: 1px solid;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -10,14 +10,14 @@
   position: fixed;
 }
 .logo {
-  /* border: 1px solid; */
+  border: 1px solid;
   width: 30%;
   position: relative;
   padding: 2%;
 }
 
 .navigation {
-  /* border: 1px solid; */
+  border: 1px solid;
   position: relative;
   width: 50%;
 }

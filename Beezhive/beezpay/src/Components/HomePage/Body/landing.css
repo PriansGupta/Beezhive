@@ -1,5 +1,5 @@
 .landing {
-  /* border: 1px solid; */
+  border: 1px solid;
   position: absolute;
   top: 30%;
   left: 10%;
@@ -8,7 +8,7 @@
 }
 .slogan {
   margin: 0%;
-  /* border: 1px solid; */
+  border: 1px solid;
 }
 
 .slogan h1 {
@@ -23,4 +23,12 @@
     transform: translateX(40px);
     font-weight: lighter;
     letter-spacing: 1px;
+}
+.lottie{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 300px;
+    height: 500px;
+    border: 1px solid;
 }
