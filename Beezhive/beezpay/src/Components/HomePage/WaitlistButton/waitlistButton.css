@@ -1,13 +1,36 @@
 .waitlist {
   border: 1px solid;
-  width: 80%;
+  width: 50%;
   height: 50px;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
+  transform: translateX(40px);
+
 }
 .placeholder {
   border: 1px solid;
-
   width: 70%;
+  align-content: left;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  padding: 4%;
+  color: grey;
+  background-color: white;
+}
+
+.arrow{
+    width: 30%;
+    background-color: #FADE31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow_holder{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    color: white;
 }
