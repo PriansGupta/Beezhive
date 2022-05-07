@@ -10,7 +10,7 @@ const Landing = () => {
       <img src={menu} alt="menu"></img>
       <div className="slogan">
         <h1>
-          We Completely <br></br>Reimagined Everything <br></br>About Credit
+          We Completely <br></br><span style={{color:"#FADE31"}}>Reimagined </span>Everything <br></br>About Credit
           Cards
         </h1>
         <br></br>
