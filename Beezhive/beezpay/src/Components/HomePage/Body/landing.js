@@ -13,9 +13,12 @@ const Landing = () => {
           Cards
         </h1>
         <br></br>
-        <h3>Canada's First Buy now Pay Later App<br></br>Powered by Beezpay</h3>
+        <h3>
+          Canada's First Buy now Pay Later App<br></br>Powered by Beezpay
+        </h3>
       </div>
       <Waitlist></Waitlist>
+      
     </div>
   );
 };
