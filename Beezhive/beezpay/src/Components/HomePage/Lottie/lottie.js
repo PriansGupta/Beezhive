@@ -1,23 +1,23 @@
 import React from "react";
 import "./lottie.css";
-import LottiePlay from "react-lottie-player";
-import Card from "../../../Animations/card.json";
+import Lottie from "react-lottie-player";
+import * as animationData from "../../../Animations/card.json";
 
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: Card,
+  animationData: animationData,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },
 };
 
-const Lottie = () => {
+const LottiePlay = () => {
   return (
     <div className="lottie">
-      <LottiePlay options={defaultOptions} height={400} width={400} />
+      <Lottie options={defaultOptions} height={400} width={400} />
     </div>
   );
 };
 
-export default Lottie;
+export default LottiePlay;

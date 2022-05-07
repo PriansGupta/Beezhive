@@ -1,7 +1,7 @@
 import './App.css';
-import Lottie from "../src/Components/HomePage/Lottie/lottie"
 import Landing from './Components/HomePage/Body/landing';
 import Header from './Components/HomePage/Header/Header';
+import LottiePlay from './Components/HomePage/Lottie/lottie';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <div className='first_page'>
       <Header></Header>
       <Landing></Landing>
-      <Lottie></Lottie>
+      <LottiePlay></LottiePlay>
       </div>
     </div>
   );
