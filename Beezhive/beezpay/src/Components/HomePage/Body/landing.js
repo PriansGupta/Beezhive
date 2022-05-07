@@ -19,14 +19,14 @@ const Landing = () => {
         </h3>
       </div>
       <Waitlist></Waitlist>
-      <Lottie
+      {/* <Lottie
         src="9711.json"
         background="transparent"
         speed="1"
         style="width: 911px; height: 1620px;"
         loop
         autoplay
-      ></Lottie>
+      ></Lottie> */}
     </div>
   );
 };
