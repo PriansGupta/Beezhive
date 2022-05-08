@@ -1,19 +1,17 @@
-.card_1 {
-  position: absolute;
-  width: 500px;
-  top: 0%;
-  z-index: 100;
-}
 .card_2 {
-  position: relative;
+  position: absolute;
   width: 267px;
   height: 431px;
   z-index: 90;
   transform: rotate(90deg);
   margin: 0;
+  top: 20px;
 }
-.card_3 {
-  position: relative;
-  width: 300px;
-  z-index: 80;
+.data{
+    position: relative;
+    width:400px;
+    height: 250px;
+    z-index: 100;
+    border: 1px solid rgb(255, 255, 255);
+    transform: translateY(110px);
 }
