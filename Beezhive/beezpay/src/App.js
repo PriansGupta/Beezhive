@@ -5,6 +5,7 @@ import LottiePlay from "./Components/HomePage/Lottie/lottie";
 import Credit from "./Components/HomePage/Credit/credit";
 import Join from "./Components/HomePage/JoinWaitlist/join";
 import Details from "./Components/HomePage/Details/details";
+import Download from "./Components/HomePage/Download/download";
 
 function App() {
   return (
@@ -21,6 +22,12 @@ function App() {
         </section>
         <section className="Details">
           <Details></Details>
+        </section>
+        <section className="Download">
+          <Download></Download>
+        </section>
+        <section className="Footer">
+          
         </section>
       </div>
     </div>

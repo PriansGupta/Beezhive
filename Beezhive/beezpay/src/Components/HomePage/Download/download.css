@@ -1,0 +1,41 @@
+.download{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid; */
+    justify-content: flex-start;
+    align-items: center;
+}
+.download h1{
+    font-size: 50px;
+    color: rgb(109, 109, 109);
+
+}
+.download_button{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    /* border:1px solid; */
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.download_button button{
+    background-color: #F5CE3F;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.download_button button ion-icon{
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0;
+    transform: translateY(4px);
+}

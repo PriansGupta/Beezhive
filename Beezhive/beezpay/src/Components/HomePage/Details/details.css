@@ -1,12 +1,59 @@
-.lottie_1{
-    width: 100%;
-    border: 1px solid;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.lottie_1 {
+  width: 100%;
+  /* border: 1px solid; */
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.details{
-    width: 100%;
+.details {
+  width: 100%;
+}
+.Lottie {
+  width: 50%;
+  /* border: 1px solid; */
+
+  height: 100%;
+}
+.points_1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.points_1 div {
+  width: 80%;
+}
+.points_1 div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.points_1 div ul li {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid; */
+  width: 100%;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.points_1 div ul li p {
+  margin: 0;
+  padding: 5px;
+  letter-spacing: 2px;
+}
+
+.points_1 div ul li ion-icon {
+  margin: 0%;
+  padding: 5px;
+  color: rgb(38, 190, 38);
+  font-size: 20px;
+}
+.points_1 h3 {
+  letter-spacing: 2px;
 }
