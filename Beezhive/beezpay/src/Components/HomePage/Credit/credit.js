@@ -10,9 +10,9 @@ const Credit=()=>{
     return(
         <div className="credit_card_details">
             <div className="card">
-                <img src={credit} alt="Credit card"></img>
-                {/* <img src={back1} alt="Credit card"></img> */}
-                {/* <img src={back2} alt="Credit card"></img> */}
+                <img className="card_1" src={credit} alt="Credit card"></img>
+                <img className="card_2" src={back1} alt="Credit card"></img>
+                <img className="card_3" src={back2} alt="Credit card"></img>
             </div>
             <div></div>
         </div>

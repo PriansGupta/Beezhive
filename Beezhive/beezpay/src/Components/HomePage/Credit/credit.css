@@ -1,3 +1,18 @@
-.credit_card_details{
-    position: relative;
+.card_1 {
+  position: absolute;
+  width: 500px;
+  top: 0%;
+  z-index: 100;
+}
+.card_2 {
+  position: relative;
+  width: 100px;
+  z-index: 90;
+  transform: rotate(90deg);
+}
+.card_3 {
+  position: relative;
+  width: 100px;
+  z-index: 80;
+
 }

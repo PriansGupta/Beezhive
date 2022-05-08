@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   /* padding: 2%;  */
-  position: fixed;
+  /* position: fixed; */
 }
 .logo {
   border: 1px solid;

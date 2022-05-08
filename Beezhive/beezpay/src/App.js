@@ -8,12 +8,12 @@ function App() {
   return (
     <div className="App">
       <div className="first_page">
-        <section>
+        <section className="Home">
           <Header></Header>
           <Landing></Landing>
           <LottiePlay></LottiePlay>
         </section>
-        <section>
+        <section className="card">
           <Credit></Credit>
         </section>
       </div>
