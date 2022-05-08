@@ -6,13 +6,14 @@
 }
 .card_2 {
   position: relative;
-  width: 100px;
+  width: 267px;
+  height: 431px;
   z-index: 90;
   transform: rotate(90deg);
+  margin: 0;
 }
 .card_3 {
   position: relative;
-  width: 100px;
+  width: 300px;
   z-index: 80;
-
 }
