@@ -7,66 +7,66 @@
   margin: 0;
   top: 20px;
 }
-.data{
-    position: relative;
-    width:400px;
-    height: 250px;
-    z-index: 100;
-    /* border: 1px solid rgb(255, 255, 255); */
-    transform: translateY(110px);
+.data {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  z-index: 100;
+  /* border: 1px solid rgb(255, 255, 255); */
+  transform: translateY(110px);
 }
-.card_logo{
-display: flex;
-justify-content: left;
-align-items: flex-start;
-padding: 10px;
+.card_logo {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 10px;
 }
-.logo_img{
-    width: 60%;
+.logo_img {
+  width: 60%;
 }
-.limit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    color: white;
-    font-size: 30px;
-    height: 30%;
+.limit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  font-size: 30px;
+  height: 30%;
 }
-.name_card{
-height:30%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-/* border: 1px solid white; */
-align-items: center;
+.name_card {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+  align-items: center;
 }
-.name{
-    color: white;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+.name {
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
-.chip{
-    width: 70px;
-    height: 40px;
-    background-color: orange;
-    border-radius: 5px;
-    margin-right: 10px;
+.chip {
+  width: 70px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 5px;
+  margin-right: 10px;
 }
-.chip div{
-    width: 10px;
-    height: 5px;
-    background-color: white;
-    border-radius: 3px;
-    margin-top: 5px;
-    margin-left: 5px;
+.chip div {
+  width: 10px;
+  height: 5px;
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
-.credit_card_details{
-    box-shadow:  2px 2px 2px 2px black;
-    height: fit-content;
+.credit_card_details {
+  box-shadow: 2px 2px 2px 2px black;
+  height: fit-content;
   transform: translateY(300px);
   width: fit-content;
 }

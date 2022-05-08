@@ -1,8 +1,30 @@
 .Join_waitlist {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 200px;
+  width: 380px;
+  height: 500px;
   position: absolute;
-  transform: translateY(650px);
+  transform: translateY(750px);
+  justify-content: center;
+  align-items: center;
+}
+.Join_waitlist h1{
+    font-size: 35px;
+    margin: 0;
+    color: #707070;
+    letter-spacing: 1px;
+}
+.Join_waitlist button{
+    background-color: #F4BD31;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: rgb(223, 222, 222) 0px 0px 5px 5px;
+    cursor: pointer;
+}
+.Join_waitlist img{
+    width: 80%;
+    margin: 50px;
 }
