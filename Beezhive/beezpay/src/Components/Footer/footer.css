@@ -3,6 +3,8 @@
  height: 100%;
  display: flex;   
  flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
  border: 1px solid;
 }
 .connect{
@@ -10,4 +12,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    padding: 5px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.platforms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+}
+.platforms ion-icon{
+    font-size: 40px;
+}
+.platforms ion-icon:nth-child(1){
+    color: #00acee ;
+}
+.platforms ion-icon:nth-child(2){
+    color: #4267B2;
+}
+.platforms ion-icon:nth-child(3){
+    color: #bc2a8d ;
+}
+.platforms ion-icon:nth-child(4){
+    color: #FF0000 ;
 }
