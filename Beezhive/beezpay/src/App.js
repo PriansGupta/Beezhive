@@ -1,16 +1,21 @@
-import './App.css';
-import Landing from './Components/HomePage/Body/landing';
-import Header from './Components/HomePage/Header/Header';
-import LottiePlay from './Components/HomePage/Lottie/lottie';
-
+import "./App.css";
+import Landing from "./Components/HomePage/Body/landing";
+import Header from "./Components/HomePage/Header/Header";
+import LottiePlay from "./Components/HomePage/Lottie/lottie";
+import Credit from "./Components/HomePage/Credit/credit";
 
 function App() {
   return (
     <div className="App">
-      <div className='first_page'>
-      <Header></Header>
-      <Landing></Landing>
-      <LottiePlay></LottiePlay>
+      <div className="first_page">
+        <section>
+          <Header></Header>
+          <Landing></Landing>
+          <LottiePlay></LottiePlay>
+        </section>
+        <section>
+          <Credit></Credit>
+        </section>
       </div>
     </div>
   );
