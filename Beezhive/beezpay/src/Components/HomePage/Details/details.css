@@ -1,0 +1,12 @@
+.lottie_1{
+    width: 100%;
+    border: 1px solid;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    width: 100%;
+}

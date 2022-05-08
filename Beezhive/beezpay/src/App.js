@@ -4,6 +4,7 @@ import Header from "./Components/HomePage/Header/Header";
 import LottiePlay from "./Components/HomePage/Lottie/lottie";
 import Credit from "./Components/HomePage/Credit/credit";
 import Join from "./Components/HomePage/JoinWaitlist/join";
+import Details from "./Components/HomePage/Details/details";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <section className="card">
           <Credit></Credit>
           <Join></Join>
+        </section>
+        <section className="Details">
+          <Details></Details>
         </section>
       </div>
     </div>
