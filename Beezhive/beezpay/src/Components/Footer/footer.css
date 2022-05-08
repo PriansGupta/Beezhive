@@ -1,0 +1,13 @@
+.footer{
+ width: 60%;
+ height: 100%;
+ display: flex;   
+ flex-direction: column;
+ border: 1px solid;
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

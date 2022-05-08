@@ -6,6 +6,7 @@ import Credit from "./Components/HomePage/Credit/credit";
 import Join from "./Components/HomePage/JoinWaitlist/join";
 import Details from "./Components/HomePage/Details/details";
 import Download from "./Components/HomePage/Download/download";
+import Footer from "./Components/Footer/footer";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Download></Download>
         </section>
         <section className="Footer">
-          
+          <Footer></Footer>
         </section>
       </div>
     </div>
