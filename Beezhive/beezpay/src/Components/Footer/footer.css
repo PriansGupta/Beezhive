@@ -5,7 +5,7 @@
  flex-direction: column;
  justify-content: space-around;
  align-items: center;
- border: 1px solid;
+ /* border: 1px solid; */
 }
 .connect{
     display: flex;
@@ -28,6 +28,7 @@
 }
 .platforms ion-icon{
     font-size: 40px;
+    cursor: pointer;
 }
 .platforms ion-icon:nth-child(1){
     color: #00acee ;
