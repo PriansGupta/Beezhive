@@ -1,0 +1,8 @@
+.Join_waitlist {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  transform: translateY(650px);
+}

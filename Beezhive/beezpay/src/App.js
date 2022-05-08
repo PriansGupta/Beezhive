@@ -3,6 +3,7 @@ import Landing from "./Components/HomePage/Body/landing";
 import Header from "./Components/HomePage/Header/Header";
 import LottiePlay from "./Components/HomePage/Lottie/lottie";
 import Credit from "./Components/HomePage/Credit/credit";
+import Join from "./Components/HomePage/JoinWaitlist/join";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         </section>
         <section className="card">
           <Credit></Credit>
+          <Join></Join>
         </section>
       </div>
     </div>
