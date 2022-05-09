@@ -5,6 +5,7 @@ const Otp=()=>{
 
     return(
         <div className="otp_modal">
+            <ion-icon name="close-circle-outline"></ion-icon>
             <div className="otp_lottie"></div>
             <div className="Verificatiion_code">
                 <h2>Verificatiion Code</h2>
@@ -15,12 +16,12 @@ const Otp=()=>{
             </div>
             <div className="otp_input">
                 <form>
-                <input type="number"></input>
-                <input type="number"></input>
-                <input type="number"></input>
-                <input type="number"></input>
-                <input type="number"></input>
-                <input type="number"></input>
+                <input type="text"></input>
+                <input type="text"></input>
+                <input type="text"></input>
+                <input type="text"></input>
+                <input type="text"></input>
+                <input type="text"></input>
                 </form>
             </div>
             <div className="resend">
