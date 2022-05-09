@@ -6,8 +6,8 @@ import Join from "../Components/HomePage/JoinWaitlist/join";
 import Details from "../Components/HomePage/Details/details";
 import Download from "../Components/HomePage/Download/download";
 import Footer from "../Components/Footer/footer";
-
-function Home() {
+ 
+const Home=()=> {
   return (
       <div className="first_page">
         <section className="Home">
