@@ -23,7 +23,13 @@ const Otp=()=>{
                 <input type="number"></input>
                 </form>
             </div>
-            <div></div>
+            <div className="resend">
+                <p>Resend</p>
+                <p>1:00</p>
+            </div>
+            <div className="verify">
+                <button type="submit">Verify</button>
+            </div>
         </div>
     );
 
