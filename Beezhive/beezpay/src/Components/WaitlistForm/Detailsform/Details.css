@@ -1,20 +1,16 @@
-.form-details {
+.form-data {
   width: 100%;
   height: 400px;
   position: absolute;
-  /* border: 1px solid; */
   display: flex;
   flex-direction: row;
-  /* transform: translateY(100px); */
 }
 .form-lottie {
   width: 30%;
-  /* border: 1px solid; */
   height: 100%;
 }
 .form-details {
   width: 70%;
-  /* border: 1px solid; */
   height: 100%;
 }
 .form-details div:nth-child(1) {
@@ -32,7 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 }
 S .form-details div:nth-child(1) h1,
 p {
@@ -45,7 +40,6 @@ p {
   flex-direction: column;
   width: 30%;
   justify-content: flex-start;
-  /* align-items: center; */
 }
 .form form div {
   display: flex;

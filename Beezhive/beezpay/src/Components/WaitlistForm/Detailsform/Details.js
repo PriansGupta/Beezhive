@@ -3,7 +3,7 @@ import "./Details.css";
 
 const FormDetails = () => {
   return (
-    <div className="form-details">
+    <div className="form-data">
       <div className="form-lottie"></div>
       <div className="form-details">
         <div>
