@@ -53,12 +53,12 @@ p {
   width: 100%;
 }
 .form form div input:nth-child(1) {
-  width: 6%;
+  width: 10%;
 }
 .form form input {
   padding: 5px;
   height: 20px;
-  /* border-radius: 5px; */
+  border-radius: 7px;
   border: 2px solid gray;
   margin: 5px;
 }
@@ -68,9 +68,8 @@ p {
   color: white;
   width: 200px;
   height: 40px;
-  /* border-radius: 7px; */
-  /* border: none; */
+  border-radius: 7px;
+  border: none;
   box-shadow: rgb(223, 222, 222) 0px 0px 5px 5px;
   cursor: pointer;
-  margin: auto;
 }
