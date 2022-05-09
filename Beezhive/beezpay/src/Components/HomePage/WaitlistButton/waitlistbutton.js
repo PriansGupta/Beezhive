@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Waitlist = () => {
   return (
-    <Link to="/Join-waitlist">
+    <Link className="Join-link" to="/Join-waitlist">
       <div className="waitlist">
         <div className="placeholder">Join Waitlist</div>
         <div className="arrow">

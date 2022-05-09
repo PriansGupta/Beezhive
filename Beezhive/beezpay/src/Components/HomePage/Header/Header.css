@@ -34,3 +34,7 @@
   font-size: 20px;
   color: rgb(54, 54, 54);
 }
+
+.navigation ul .Home-link{
+    text-decoration: none;
+}
