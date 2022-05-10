@@ -13,11 +13,23 @@ const Thanks = (props) => {
   };
   const ModalOverlay = (props) => {
     return (
-      <div className="modal">
+      <div className="modal_thnx">
         <span onClick={props.onClose}>
           <ion-icon name="close-circle-outline"></ion-icon>
         </span>
-       
+        <h2>
+          YOU'RE ON OUR <br></br>WAITLIST MY FRIEND{" "}
+        </h2>
+        <div className="waitlist_number">
+          <div>#1234</div>
+          <div>USERNAME</div>
+        </div>
+        <div className="Approved">
+          <p>
+            We will send you an email as soon as your Beezpay Plus application
+            is approved.<br></br>See you soon
+          </p>
+        </div>
       </div>
     );
   };

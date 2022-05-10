@@ -8,12 +8,10 @@ const Otp = (props) => {
 
   const Verify = () => {
     props.onClose();
+    props.onVerify();
     setVerify(!verify);
   };
 
-  const ModalDisplay = () => {
-    setVerify(!verify);
-  };
   const Backdrop = (props) => {
     return (
       <div
@@ -25,7 +23,7 @@ const Otp = (props) => {
   const ModalOverlay = (props) => {
     return (
       <React.Fragment>
-        {verify && <Thanks onClose={ModalDisplay}></Thanks>}
+        {verify && <Thanks></Thanks>}
         <div className="modal">
           <span onClick={props.onClose}>
             <ion-icon name="close-circle-outline"></ion-icon>
