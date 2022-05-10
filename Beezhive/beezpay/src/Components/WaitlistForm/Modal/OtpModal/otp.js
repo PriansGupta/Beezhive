@@ -6,8 +6,7 @@ import Thanks from "../ThanksModal/Thanks";
 const Otp = (props) => {
   const [verify, setVerify] = useState(false);
 
-  const Verify = (e) => {
-    e.preventDefault();
+  const Verify = () => {
     props.onClose();
     setVerify(!verify);
   };
@@ -42,7 +41,7 @@ const Otp = (props) => {
             </p>
           </div>
           <div className="otp_input">
-            <form onSubmit={Verify}>
+            <form>
               <input type="text"></input>
               <input type="text"></input>
               <input type="text"></input>
@@ -56,7 +55,7 @@ const Otp = (props) => {
             <p>1:00</p>
           </div>
           <div className="verify">
-            <button type="submit">Verify</button>
+            <button onClick={Verify}>Verify</button>
           </div>
         </div>
       </React.Fragment>

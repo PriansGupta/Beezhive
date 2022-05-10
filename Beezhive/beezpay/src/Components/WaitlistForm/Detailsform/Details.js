@@ -8,12 +8,16 @@ const FormDetails = () => {
 
   const ModalDisplay = (e) => {
       e.preventDefault();
-    setDisplay(!display);
+    setDisplay(true);
   };
 
+const CloseModal=(value)=>{
+    console.log(value)
+    setDisplay(!display)
+}
   return (
     <React.Fragment>
-      {display && <Otp onClose={ModalDisplay}></Otp>}
+      {display && <Otp onClose={CloseModal}></Otp>}
       <div className="form-data">
         <div className="form-lottie"></div>
         <div className="form-details">
