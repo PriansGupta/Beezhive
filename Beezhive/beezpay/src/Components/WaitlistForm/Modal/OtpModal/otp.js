@@ -5,13 +5,55 @@ import Thanks from "../ThanksModal/Thanks";
 
 const Otp = (props) => {
   const [verify, setVerify] = useState(false);
-
-  const Verify = () => {
+  const [code, SetCode] = useState("");
+  let User;
+  const OtpHandler = (e) => {
+    SetCode(e.target.value);
+    console.log(e.target.value);
+  };
+  
+  const VerifyOtp = () => {
+    let confirmationResult = window.confirmationResult;
+    confirmationResult
+      .confirm(code)
+      .then((result) => {
+        // User signed in successfully.
+        const user = result.user;
+        User=user;
+        console.log(user);
+        // ...
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    SendData({
+      id: "iyNQC82WxWXwTwvYqqXZ5jqnGVx2",
+      name: "priyansh",
+      email: "priyanshg615@gmail.com",
+      number: "+918423364688",
+    });
     props.onClose();
     props.onVerify();
     setVerify(!verify);
   };
-
+  const SendData = (Data) => {
+    setTimeout(() => {
+      const requestOptions = {
+        method: "POST",
+        body: JSON.stringify(Data),
+      };
+      fetch(
+        "https://us-central1-beezhive-79e2f.cloudfunctions.net/app/api/waitlist",
+        requestOptions
+      )
+        .then(async (response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }, 100);
+  };
   const Backdrop = (props) => {
     return (
       <div
@@ -40,12 +82,7 @@ const Otp = (props) => {
           </div>
           <div className="otp_input">
             <form>
-              <input type="text"></input>
-              <input type="text"></input>
-              <input type="text"></input>
-              <input type="text"></input>
-              <input type="text"></input>
-              <input type="text"></input>
+              <input type="text" value={code} onChange={OtpHandler}></input>
             </form>
           </div>
           <div className="resend">
@@ -53,7 +90,7 @@ const Otp = (props) => {
             <p>1:00</p>
           </div>
           <div className="verify">
-            <button onClick={Verify}>Verify</button>
+            <button onClick={VerifyOtp}>Verify</button>
           </div>
         </div>
       </React.Fragment>

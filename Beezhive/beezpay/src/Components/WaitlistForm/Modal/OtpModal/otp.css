@@ -46,7 +46,7 @@ p {
   /* border: 1px solid; */
 }
 .otp_input form input {
-  width: 35px;
+  width: 200px;
   height: 35px;
   margin: 10px;
   border-radius: 5px;
@@ -54,6 +54,10 @@ p {
   justify-content: center;
   align-items: center;
   display: flex;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .resend {
   width: 100%;
