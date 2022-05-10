@@ -5,7 +5,6 @@ import Join from "./Pages/JoinWaitlist";
 import React from "react";
 import Footer from "./Components/Footer/footer";
 import Header from "./Components/HomePage/Header/Header";
-import Otp from "./Components/WaitlistForm/Modal/OtpModal/otp";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
       <section className="Footer">
         <Footer></Footer>
       </section>
-      <Otp></Otp>
     </React.Fragment>
   );
 }
