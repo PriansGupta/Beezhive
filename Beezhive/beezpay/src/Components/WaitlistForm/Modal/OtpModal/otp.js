@@ -11,7 +11,7 @@ const Otp = (props) => {
     SetCode(e.target.value);
     console.log(e.target.value);
   };
-  console.log(props.phone)
+  console.log(props.phone);
   const VerifyOtp = () => {
     let confirmationResult = window.confirmationResult;
     confirmationResult
@@ -27,7 +27,7 @@ const Otp = (props) => {
       });
     SendData({
       id: "iyNQC82WxWXwTwvYqqXZ5jqnGVx2",
-      name: "priyansh", 
+      name: "priyansh",
       email: "priyanshg615@gmail.com",
       number: "+918423364688",
     });
@@ -64,7 +64,7 @@ const Otp = (props) => {
   const ModalOverlay = (props) => {
     return (
       <React.Fragment>
-        {verify && <Thanks username={props.name}></Thanks>}
+        {verify && <Thanks name={props.name}></Thanks>}
         <div className="modal">
           <span onClick={props.onClose}>
             <ion-icon name="close-circle-outline"></ion-icon>
@@ -103,7 +103,12 @@ const Otp = (props) => {
         document.getElementById("backdrop-root")
       )}
       {ReactDOM.createPortal(
-        <ModalOverlay onClose={props.onClose} display={props.display} phone={props.phone} />,
+        <ModalOverlay
+          onClose={props.onClose}
+          display={props.display}
+          phone={props.phone}
+          name={props.name}
+        />,
         document.getElementById("overlay-root")
       )}
     </React.Fragment>

@@ -12,6 +12,7 @@ const Thanks = (props) => {
     );
   };
   const ModalOverlay = (props) => {
+      console.log(props.username)
     return (
       <div className="modal_thnx">
         <span onClick={props.onClose}>
@@ -22,7 +23,7 @@ const Thanks = (props) => {
         </h2>
         <div className="waitlist_number">
           <div>#1234</div>
-          <div>USERNAME</div>
+          <div>{props.username}</div>
         </div>
         <div className="Approved">
           <p>
