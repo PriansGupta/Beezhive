@@ -3,6 +3,7 @@ import React from "react";
 import "./Thanks.css";
 
 const Thanks = (props) => {
+
   const Backdrop = (props) => {
     return (
       <div
@@ -12,7 +13,6 @@ const Thanks = (props) => {
     );
   };
   const ModalOverlay = (props) => {
-      console.log(props.username)
     return (
       <div className="modal_thnx">
         <span onClick={props.onClose}>
@@ -23,7 +23,7 @@ const Thanks = (props) => {
         </h2>
         <div className="waitlist_number">
           <div>#1234</div>
-          <div>{props.username}</div>
+          <div>N/A</div>
         </div>
         <div className="Approved">
           <p>
@@ -45,7 +45,7 @@ const Thanks = (props) => {
         <ModalOverlay
           onClose={props.onClose}
           display={props.display}
-          username={props.username}
+          name={props.name}
         />,
         document.getElementById("overlay-root")
       )}

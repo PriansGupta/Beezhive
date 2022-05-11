@@ -3,7 +3,6 @@ import form from "../../../Animations/form.json"
 import Lottie from "lottie-web"
 import "./Details.css";
 import Otp from "../Modal/OtpModal/otp";
-// import Transition from "react-transition-group";
 import Thanks from "../Modal/ThanksModal/Thanks";
 import { Authentication } from "../../../firebase";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
@@ -37,14 +36,12 @@ const FormDetails = () => {
   };
 
   const ModalDisplay = (e) => {
-    console.log(name, email, phone);
     e.preventDefault();
     window.recaptchaVerifier = new RecaptchaVerifier(
       "sign-in-button",
       {
         size: "invisible",
         callback: (response) => {
-          //   onSignInSubmit();
         },
       },
       Authentication
@@ -58,7 +55,6 @@ const FormDetails = () => {
         window.confirmationResult = result;
       })
       .catch((error) => {
-        console.log(error);
       });
     setDisplay(true);
   };
@@ -68,11 +64,9 @@ const FormDetails = () => {
   };
 
   const CloseModal = (value) => {
-    console.log(value);
     setDisplay(!display);
   };
   const CloseVerify = (value) => {
-    console.log(value);
     setVerify("NO");
   };
   return (

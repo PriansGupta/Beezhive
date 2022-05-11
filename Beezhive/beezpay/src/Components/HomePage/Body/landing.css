@@ -1,5 +1,4 @@
 .landing {
-  /* border: 1px solid; */
   position: absolute;
   top: 30%;
   left: 10%;
@@ -9,7 +8,6 @@
 }
 .slogan {
   margin: 0%;
-  /* border: 1px solid; */
 }
 
 .slogan h1 {
@@ -18,12 +16,11 @@
   transform: translateX(40px);
   color: #707070;
   font-size: 38px;
-
 }
-.slogan h3{
-    padding: 0;
-    margin: 0;
-    transform: translateX(40px);
-    font-weight: lighter;
-    letter-spacing: 1px;
+.slogan h3 {
+  padding: 0;
+  margin: 0;
+  transform: translateX(40px);
+  font-weight: lighter;
+  letter-spacing: 1px;
 }

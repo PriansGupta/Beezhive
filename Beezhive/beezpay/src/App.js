@@ -5,7 +5,7 @@ import Join from "./Pages/JoinWaitlist";
 import React from "react";
 import Footer from "./Components/Footer/footer";
 import Header from "./Components/HomePage/Header/Header";
-import LottiePlay from "./Components/HomePage/Lottie/lottie";
+
 
 function App() {
   return (

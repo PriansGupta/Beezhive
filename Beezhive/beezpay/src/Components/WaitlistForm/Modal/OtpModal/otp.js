@@ -9,18 +9,12 @@ const Otp = (props) => {
 
   const OtpHandler = (e) => {
     SetCode(e.target.value);
-    console.log(e.target.value);
   };
-  console.log(props.phone);
   const VerifyOtp = () => {
     let confirmationResult = window.confirmationResult;
     confirmationResult
       .confirm(code)
       .then((result) => {
-        // User signed in successfully.
-        const user = result.user;
-        console.log(user);
-        // ...
       })
       .catch((error) => {
         console.log(error);
@@ -62,9 +56,10 @@ const Otp = (props) => {
     );
   };
   const ModalOverlay = (props) => {
+      const Test=<Thanks name={props.name}></Thanks>;
     return (
       <React.Fragment>
-        {verify && <Thanks name={props.name}></Thanks>}
+        {verify && Test }
         <div className="modal">
           <span onClick={props.onClose}>
             <ion-icon name="close-circle-outline"></ion-icon>
