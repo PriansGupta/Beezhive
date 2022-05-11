@@ -1,23 +1,24 @@
-import React from "react";
-import Lottie from "react-lottie-player";
+import React, { useEffect, useRef } from "react";
 import "./details.css";
+import Lottie from "lottie-web";
 import card from "../../../Animations/card.json";
 
 const Details = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: card,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  const container = useRef(null);
+  useEffect(() => {
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: card,
+    });
+  }, []);
+
   return (
     <div className="details">
       <div className="lottie_1">
-        <div className="Lottie">
-          <Lottie options={defaultOptions} height={300} width={300} />
-        </div>
+        <div className="container Lottie" ref={container}></div>
         <div className="points_1">
           <h3>Why Beezpay Plus?</h3>
           <div>
@@ -44,7 +45,9 @@ const Details = () => {
       </div>
       <div className="lottie_2">
         <div className="points_1">
-          <h3>How <b>Beezpay plus</b> is better than credit card?</h3>
+          <h3>
+            How <b>Beezpay plus</b> is better than credit card?
+          </h3>
           <div>
             <ul>
               <li>
@@ -66,9 +69,7 @@ const Details = () => {
             </ul>
           </div>
         </div>
-        <div className="Lottie">
-          <Lottie options={defaultOptions} height={300} width={300} />
-        </div>
+        <div className="Lottie"></div>
       </div>
     </div>
   );

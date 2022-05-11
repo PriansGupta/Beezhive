@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useState,useRef,useEffect } from "react";
+import form from "../../../Animations/form.json"
+import Lottie from "lottie-web"
 import "./Details.css";
 import Otp from "../Modal/OtpModal/otp";
 // import Transition from "react-transition-group";
-import Thanks from "../Modal/ThanksModal/Thanks"
+import Thanks from "../Modal/ThanksModal/Thanks";
 import { Authentication } from "../../../firebase";
-import { RecaptchaVerifier,signInWithPhoneNumber } from "firebase/auth";
+import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 
 const FormDetails = () => {
+  const container = useRef(null);
+  useEffect(() => {
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: form,
+    });
+  }, []);
+
   const [display, setDisplay] = useState(false);
   const [verify, setVerify] = useState("NO");
   const [name, setName] = useState("");
@@ -26,20 +39,29 @@ const FormDetails = () => {
   const ModalDisplay = (e) => {
     console.log(name, email, phone);
     e.preventDefault();
-    window.recaptchaVerifier = new RecaptchaVerifier('sign-in-button', {
-        'size': 'invisible',
-        'callback': (response) => {
-        //   onSignInSubmit();
-        }
-      }, Authentication);
-      signInWithPhoneNumber(Authentication,"+91"+phone,window.recaptchaVerifier).then((result)=>{
-        window.confirmationResult=result
-      }).catch(error=>{
-          console.log(error)
+    window.recaptchaVerifier = new RecaptchaVerifier(
+      "sign-in-button",
+      {
+        size: "invisible",
+        callback: (response) => {
+          //   onSignInSubmit();
+        },
+      },
+      Authentication
+    );
+    signInWithPhoneNumber(
+      Authentication,
+      "+91" + phone,
+      window.recaptchaVerifier
+    )
+      .then((result) => {
+        window.confirmationResult = result;
       })
+      .catch((error) => {
+        console.log(error);
+      });
     setDisplay(true);
   };
-
 
   const Verify = () => {
     setVerify("YES");
@@ -55,11 +77,19 @@ const FormDetails = () => {
   };
   return (
     <React.Fragment>
-      {display && <Otp onClose={CloseModal} onVerify={Verify} name={name} phone={phone} email={email}></Otp>}
+      {display && (
+        <Otp
+          onClose={CloseModal}
+          onVerify={Verify}
+          name={name}
+          phone={phone}
+          email={email}
+        ></Otp>
+      )}
       {verify === "YES" && <Thanks onClose={CloseVerify}></Thanks>}
       <div id="sign-in-button"></div>
       <div className="form-data">
-        <div className="form-lottie"></div>
+        <div className="form-lottie container" ref={container}></div>
         <div className="form-details">
           <div>
             <h1>Join Waitlist Now</h1>

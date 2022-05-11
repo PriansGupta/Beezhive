@@ -13,7 +13,7 @@
 .Lottie {
   width: 50%;
   /* border: 1px solid; */
-
+  overflow: hidden;
   height: 100%;
 }
 .points_1 {
