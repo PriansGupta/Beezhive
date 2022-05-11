@@ -57,3 +57,10 @@
 .points_1 h3 {
   letter-spacing: 2px;
 }
+
+.Lottie2{
+    transform: translate(800px,-350px);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}

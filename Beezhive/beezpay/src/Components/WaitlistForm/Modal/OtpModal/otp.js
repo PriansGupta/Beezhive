@@ -64,7 +64,7 @@ const Otp = (props) => {
   const ModalOverlay = (props) => {
     return (
       <React.Fragment>
-        {verify && <Thanks></Thanks>}
+        {verify && <Thanks username={props.name}></Thanks>}
         <div className="modal">
           <span onClick={props.onClose}>
             <ion-icon name="close-circle-outline"></ion-icon>

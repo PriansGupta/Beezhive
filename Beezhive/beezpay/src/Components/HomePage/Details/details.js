@@ -1,17 +1,30 @@
 import React, { useEffect, useRef } from "react";
 import "./details.css";
 import Lottie from "lottie-web";
-import card from "../../../Animations/card.json";
+import card from "../../../Animations/thinking.json";
+import ball from "../../../Animations/card.json";
 
 const Details = () => {
+
   const container = useRef(null);
   useEffect(() => {
     Lottie.loadAnimation({
-      container: container.current,
+      container:container.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
       animationData: card,
+    });
+  }, []);
+
+  const ballLottie = useRef(null);
+  useEffect(() => {
+    Lottie.loadAnimation({
+      container: ballLottie.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: ball,
     });
   }, []);
 
@@ -69,7 +82,7 @@ const Details = () => {
             </ul>
           </div>
         </div>
-        <div className="Lottie"></div>
+        <div className="Lottie2" ref={ballLottie} ></div>
       </div>
     </div>
   );

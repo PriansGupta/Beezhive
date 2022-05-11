@@ -41,7 +41,11 @@ const Thanks = (props) => {
         document.getElementById("backdrop-root")
       )}
       {ReactDOM.createPortal(
-        <ModalOverlay onClose={props.onClose} display={props.display} />,
+        <ModalOverlay
+          onClose={props.onClose}
+          display={props.display}
+          username={props.username}
+        />,
         document.getElementById("overlay-root")
       )}
     </React.Fragment>
