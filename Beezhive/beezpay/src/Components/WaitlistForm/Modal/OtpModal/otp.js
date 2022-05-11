@@ -6,12 +6,12 @@ import Thanks from "../ThanksModal/Thanks";
 const Otp = (props) => {
   const [verify, setVerify] = useState(false);
   const [code, SetCode] = useState("");
-  let User;
+
   const OtpHandler = (e) => {
     SetCode(e.target.value);
     console.log(e.target.value);
   };
-  
+  console.log(props.phone)
   const VerifyOtp = () => {
     let confirmationResult = window.confirmationResult;
     confirmationResult
@@ -19,7 +19,6 @@ const Otp = (props) => {
       .then((result) => {
         // User signed in successfully.
         const user = result.user;
-        User=user;
         console.log(user);
         // ...
       })
@@ -28,7 +27,7 @@ const Otp = (props) => {
       });
     SendData({
       id: "iyNQC82WxWXwTwvYqqXZ5jqnGVx2",
-      name: "priyansh",
+      name: "priyansh", 
       email: "priyanshg615@gmail.com",
       number: "+918423364688",
     });
@@ -77,7 +76,7 @@ const Otp = (props) => {
             <p>Please Enter the Code Sent</p>
             <br></br>
             <p>
-              To <b>+11234567890</b>
+              To <b>{`+91${props.phone}`}</b>
             </p>
           </div>
           <div className="otp_input">
@@ -104,7 +103,7 @@ const Otp = (props) => {
         document.getElementById("backdrop-root")
       )}
       {ReactDOM.createPortal(
-        <ModalOverlay onClose={props.onClose} display={props.display} />,
+        <ModalOverlay onClose={props.onClose} display={props.display} phone={props.phone} />,
         document.getElementById("overlay-root")
       )}
     </React.Fragment>

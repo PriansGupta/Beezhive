@@ -1,23 +1,16 @@
-import React from "react";
+import { React, useRef } from "react";
 import "./lottie.css";
-import Lottie from "react-lottie-player";
-import * as animationData from "../../../Animations/card.json";
+import Lottie from "lottie-web";
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
+const lottie = useRef(null);
 
+useRef(()=>{
+Lottie.loadAnimation({
+    lottie:lottie.current,
+})
+},[])
 const LottiePlay = () => {
-  return (
-    <div className="lottie">
-      <Lottie options={defaultOptions} height={400} width={400} />
-    </div>
-  );
+  return <div className="lottie" ref={lottie}></div>;
 };
 
 export default LottiePlay;

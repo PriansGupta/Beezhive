@@ -13,11 +13,6 @@ const FormDetails = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  const Data={
-    name: name,
-    email: email,
-    number: phone
-  }
   const nameChange = (e) => {
     setName(e.target.value);
   };
@@ -60,7 +55,7 @@ const FormDetails = () => {
   };
   return (
     <React.Fragment>
-      {display && <Otp onClose={CloseModal} onVerify={Verify} data={Data}></Otp>}
+      {display && <Otp onClose={CloseModal} onVerify={Verify} name={name} phone={phone} email={email}></Otp>}
       {verify === "YES" && <Thanks onClose={CloseVerify}></Thanks>}
       <div id="sign-in-button"></div>
       <div className="form-data">
